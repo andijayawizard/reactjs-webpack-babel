@@ -1,0 +1,16 @@
+.kotak {
+  border: 2px solid black;
+  padding: 4px;
+  font: 20px normal "tahoma";
+  background-color: grey;
+}
+.sidebar {
+  float: left;
+}
+.content {
+  float: left;
+}
+.clear {
+  float: none;
+  clear: both;
+}
