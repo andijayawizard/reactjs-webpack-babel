@@ -1,19 +1,24 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
+import { Container, Row } from "react-bootstrap";
 import ReactDOM from "react-dom";
-import Top from "./components/Top";
 import Bottom from "./components/Bottom";
+import Content from "./components/Content";
 import Sidebar from "./components/Sidebar";
-import Content from './components/Content'
+import Top from "./components/Top";
 import "./scss/style.scss";
 
 const HelloWorld = () => {
   return (
     <>
-      <Top />
-      <Sidebar />
-      <Content />
-      <div className="clear"></div>
-      <Bottom />
+      <Container fluid>
+        <Top />
+        <Row className="justify-content-md-center">
+          <Sidebar />
+          <Content />
+        </Row>
+        <Bottom />
+      </Container>
     </>
   );
 };

@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import { Col } from "react-bootstrap";
 
 class Sidebar extends Component {
   render() {
     return (
       <>
-        <div className="kotak sidebar">menu sidebar</div>
+        <Col sm={2}>
+          <div className="kotak sidebar">menu sidebar</div>
+        </Col>
       </>
     );
   }

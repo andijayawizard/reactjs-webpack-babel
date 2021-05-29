@@ -4,7 +4,9 @@ class Top extends Component {
   render() {
     return (
       <>
-        <div className="kotak">menu utama</div>
+        <div className="kotak">
+          <h1>selamat datang</h1>
+        </div>
       </>
     );
   }
